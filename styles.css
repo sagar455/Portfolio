@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #C2410C;
-    --emeralds: #ECFDF5;
+    --primary-color: #20063B;
+    --secondary-color: #EDE9FE
+    ;
     --dark-gray: #6B7280;
+    --temp:#FAF5FF; 
+    --hover-color:#7E22CE;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    background-color: var(--temp);
 }
 
 hr {
@@ -38,13 +42,18 @@ hr {
     padding: 0.5rem 1rem;
 }
 
-.link-primary {
+.link-primary{
     background-color: var(--primary-color);
     border-radius: 0.5rem;
     color: white;
     display: block;
     max-width: 140px;
     margin: 1rem 1rem 1rem 0rem;
+    
+}
+
+.link-primary:hover{
+    background-color: var(--hover-color);
 }
 
 .link-secondary {
@@ -54,6 +63,12 @@ hr {
     display: block;
     max-width: 140px;
     margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-secondary:hover
+{
+    color: var(--hover-color);
+    border: 1px solid var(--hover-color);
 }
 
 .list-non-bullet {
@@ -121,7 +136,7 @@ hr {
     color: var(--dark-gray);
 }
 
-.hero .hero-heading .heading-inverted {
+.hero .heading-inverted {
     color: var(--primary-color);
 }
 
@@ -137,7 +152,7 @@ hr {
 }
 
 .ow {
-    background-color: var(--emeralds);
+    background-color: var(--secondary-color);
 }
 
 
@@ -164,10 +179,14 @@ hr {
 }
 
 
-.showcase-list {
+.showcase-list{
     padding: 2rem;
+    background-color: var(--secondary-color);
 }
-
+.showcase-list-ow{
+    padding: 2rem;
+    background-color: var(--temp);
+}
 
 .showcase-blog {
     padding-bottom: 6rem;
